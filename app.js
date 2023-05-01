@@ -5,8 +5,9 @@ const app = express();
 
 //API Middleware
 
-app.use(bodyParser.json()); // accept data in json format
-app.use(bodyParser.urlencoded({ extended: false }));; //decode the data send through html form
+//app.use(bodyParser.json()); // accept data in json format
+//app.use(bodyParser.urlencoded({ extended: false }));; //decode the data send through html form
+app.use(express.json());
 app.use(express.static('public')) // server our public folder as a static folder
 
 
